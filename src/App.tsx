@@ -1,13 +1,15 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import InputField from './components/InputField';
 
 let printName: (name: string) => void;
 
-function App() {
+const App: React.FC = () => {
   return (
     <div className="App">
-     Hello WOrl
+     <span className='heading'>Taskify</span>
+     <InputField />
     </div>
   );
 }
